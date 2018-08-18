@@ -107,15 +107,21 @@ router.post("/forgot-password", async (req, res) => {
         context: { token }
       },
       err => {
+        /**
+         * Here, we not validate if email send failed, to prevent "delay request"
+         * But, if you want, just update the logic
+         */
         if (err) {
-          res.status(400).json({
-            error: "Cannot send forgot password email"
-          });
+          console.log("err ", err);
+          /**
+           * It's a good practice send a email of error for admin,
+           * or just print in log a "error-list-file" for managers can see
+           */
         }
-
-        return res.send();
       }
     );
+
+    res.send();
   } catch (error) {
     res.status(400).json({
       error: "Error on forgot password, try again"
