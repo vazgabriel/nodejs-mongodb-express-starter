@@ -9,4 +9,4 @@
 - And more...
 
 ### References
-[Rocket Seat YT] (https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg)
+- [Rocket Seat YT](https://www.youtube.com/channel/UCSfwM5u0Kce6Cce8_S72olg) - Channel
